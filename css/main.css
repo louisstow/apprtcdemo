@@ -1,0 +1,149 @@
+a:link { color: #FFFFFF; }
+a:visited {color: #FFFFFF; }
+html, body {
+  background-color: #000000;
+  height: 100%;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+#topbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#status {
+  background-color: rgba(104, 104, 104, 0.5);
+  color: #FFFFFF;
+  font-size: 13px; font-weight: bold;
+  line-height: 28px;
+  text-align: center;
+}
+
+#status a {
+  display: block;
+}
+
+#container {
+  background-color: #000000;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px auto;
+  -webkit-perspective: 1000;
+}
+#card {
+  -webkit-transition-duration: 2s;
+  -webkit-transform-style: preserve-3d;
+
+  position: relative;
+}
+#text {
+  height: 200px;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+  bottom: 0;
+  border-top: 1px solid white;
+  background: #eee;
+}
+#msglog {
+  height: 150px;
+  font-size: 12px;
+  overflow: auto;
+}
+#msglog div.recv {
+  background: #fff;
+}
+#msglog div {
+  padding: 2px 5px;
+}
+#msglog div span {
+  color: #666;
+  padding-right: 5px;
+}
+#text textarea {
+  width: 90%;
+  margin: 0;
+  height: 50px;
+  box-sizing: border-box;
+  border: 0;
+}
+#text button {
+  width: 10%;
+  margin: 0;
+  height: 50px;
+  float: right;
+  box-sizing: border-box;
+  border: 0;
+  border-left: 1px solid #aaa;
+}
+#chat {
+  border-top: 1px solid #444;
+}
+#local {
+  position: absolute;
+  width: 100%;
+  transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  -webkit-backface-visibility: hidden;
+}
+#remote {
+  position: absolute;
+  width: 100%;
+  -webkit-transform: rotateY(180deg);
+  -webkit-backface-visibility: hidden;
+}
+#mini {
+  position: absolute;
+  height: 30%;
+  width: 30%;
+  bottom: 32px;
+  right: 4px;
+  opacity: 1.0;
+  transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+}
+#localVideo {
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 2s;
+  width: 100%;
+  height: 100%;
+}
+#remoteVideo {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 2s;
+}
+#miniVideo {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition-property: opacity;
+  -webkit-transition-duration: 2s;
+}
+#hangup {
+ font-size: 13px; font-weight: bold;
+ color: #FFFFFF;
+ width: 128px;
+ height: 24px;
+ background-color: #808080;
+ border-style: solid;
+ border-color: #FFFFFF;
+ margin: 2px;
+}
+#infoDiv {
+  position: absolute;
+  float: right;
+  background-color: grey;
+  margin: 2px;
+  display: none;
+}
