@@ -154,7 +154,6 @@ function resetStatus() {
 function doGetUserMedia() {
   // Call into getUserMedia via the polyfill (adapter.js).
   try {
-    alert(JSON.stringify(mediaConstraints))
     getUserMedia(mediaConstraints, onUserMediaSuccess,
                  onUserMediaError);
     //console.log('Requested access to local media with mediaConstraints:\n' +
